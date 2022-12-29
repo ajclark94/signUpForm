@@ -23,7 +23,6 @@
 .odin {
   height: 60px;
   padding: 15px;
-  padding-top: 35px;
 }
 
 .title {
@@ -43,7 +42,65 @@
   background-color: rgba(0, 0, 0, 0.5);
   height: 75px;
   margin-top: 33vh;
-  padding: 10px 50px 50px 150px;
   width: 25vw;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  height: fit-content;
+}
+
+.form {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+  width: 100;
+  padding: 10px;
+}
+
+.firstRow,
+.secondRow,
+.thirdRow {
+  display: flex;
+  gap: 10px;
+}
+
+.input {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 10px;
+}
+
+.top {
+  padding: 100px 100px 10px 10px;
+  font-weight: bold;
+}
+
+.bottom {
+  padding: 25px;
+}
+
+button {
+  padding: 10px;
+  background-color: forestgreen;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.form > p {
+  font-weight: bold;
+}
+
+.error {
+  border-color: red;
+}
+
+input:focus {
+  border: 1px solid blue;
 }
